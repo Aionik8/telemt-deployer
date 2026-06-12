@@ -54,6 +54,10 @@ The binary will be created in `dist/`.
 - Confirmed SSH fingerprints are stored locally to detect server key changes.
 - The app modifies firewall, systemd and telemt configuration on the target server.
 
+## Important note
+
+Windows executable is built with PyInstaller. Some antivirus engines may show false positives because the app contains SSH/network deployment logic. Source code is available in this repository, and you can build the executable yourself.
+
 ## License
 
 MIT
